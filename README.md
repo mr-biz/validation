@@ -1,1 +1,1 @@
-# These are exercises from my DevOps course
+# These are exercises from edX DevOps: Foundations and tools course
