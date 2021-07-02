@@ -1,5 +1,3 @@
 #!/bin/bash
 touch hello
-chmod +rwx hello
-chmod g+rx hello
-chmod o+rwx hello
+chmod 754 hello
