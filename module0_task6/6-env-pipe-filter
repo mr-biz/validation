@@ -1,4 +1,4 @@
 #!/bin/bash
-pintenv | grep TERM
+printenv | grep TERM
 
 
