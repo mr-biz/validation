@@ -1,1 +1,19 @@
-blah
+#!/bin/bash
+mkdir ./dist
+cd ./dist
+wget https://github.com/theNewDynamic/gohugo-theme-ananke/archive/master.zip
+hugo new site "Awesome Inc."
+mkdir ./"Awesome Inc."/themes
+unzip master.zip -d ./"Awesome Inc."/themes
+mv ./"Awesome Inc."/themes/gohugo-theme-ananke-master ./"Awesome Inc."/themes/ananke
+cd ./"Awesome Inc."
+#
+echo theme = \"ananke\" >> config.toml
+hugo new posts/welcome.md
+echo  "Welcome to Awesome Inc." >> ./content/posts/welcome.md
+#
+git commit -m "Awesome Inc. blog made with Hugo"
+#
+
+
+
