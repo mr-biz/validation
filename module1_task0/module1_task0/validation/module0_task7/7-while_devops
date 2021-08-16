@@ -1,9 +1,0 @@
-#!/bin/bash
-
-l="0"
-
-while [ $l -lt 10 ]
-do
-echo "DevOps"
-l=$[$l+1]
-done
